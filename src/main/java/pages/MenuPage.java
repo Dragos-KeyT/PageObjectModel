@@ -21,5 +21,12 @@ public class MenuPage {
 		
 	}
 	
+	public ContactsPage navigateToContact() {
+		driver.findElement(contactLink).click();
+		return new ContactsPage(driver);
+		
+	}
+	
+	//ContactPage contactPage = navigateToContact()
 
 }

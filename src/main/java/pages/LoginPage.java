@@ -15,6 +15,10 @@ public class LoginPage {
 	public By passwordField = By.id("password");
 	public By submitButton = By.xpath("//input[@class='submit_button']");
 	
+	public By loginErrorMsg = By.cssSelector("div[class*='sc_infobox_style_error']");	
+	public By loginSucessMsg = By.cssSelector("div[class*='sc_infobox_style_success']");
+	
+	public By logoutButton = By.cssSelector("li[class='menu_user_logout']");
 	
 	public void loginInApp(String username, String password) {
 		
@@ -23,5 +27,16 @@ public class LoginPage {
 		driver.findElement(submitButton).click();
 		
 	}
+	
+	public boolean checkMsgIsDisplayed(By locator) {
+		
+		 return driver.findElement(locator).isDisplayed();
+	}
+	
+	public void logoutFromApp() {
+		
+		driver.findElement(logoutButton).click();
+	}
+	
 
 }

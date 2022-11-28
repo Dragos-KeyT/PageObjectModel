@@ -14,7 +14,7 @@ public class MenuPage {
 	
 	public By loginLink = By.linkText("Login");
 	public By contactLink = By.linkText("CONTACTS");
-	
+	public By shopLink = By.linkText("BOOKS");
 	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();

@@ -3,7 +3,9 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+import utils.SeleniumWrappers;
+
+public class LoginPage extends SeleniumWrappers {
 	
 	public WebDriver driver;
 	

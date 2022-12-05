@@ -20,7 +20,7 @@ public class LoginTest extends BaseTest{
 		menu.navigateTo(menu.loginLink);
 		loginPage.loginInApp("TestUser", "12345@67890");
 		
-		assertTrue(loginPage.checkMsgIsDisplayed(loginPage.loginSucessMsg));
+		assertTrue(loginPage.checkElementIsDisplayed(loginPage.loginSucessMsg));
 		
 		loginPage.logoutFromApp();
 	}
@@ -33,7 +33,7 @@ public class LoginTest extends BaseTest{
 		menu.navigateTo(menu.loginLink);
 		loginPage.loginInApp("TestUser", "1234");
 		
-		assertTrue(loginPage.checkMsgIsDisplayed(loginPage.loginErrorMsg));
+		assertTrue(loginPage.checkElementIsDisplayed(loginPage.loginErrorMsg));
 
 	}
 	

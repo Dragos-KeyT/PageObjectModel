@@ -22,22 +22,27 @@ public class LoginPage extends SeleniumWrappers {
 	
 	public By logoutButton = By.cssSelector("li[class='menu_user_logout']");
 	
+	public By closePopUp = By.cssSelector("a[class='popup_close']");
+	
 	public void loginInApp(String username, String password) {
 		
-		driver.findElement(usernameField).sendKeys(username);
-		driver.findElement(passwordField).sendKeys(password);
-		driver.findElement(submitButton).click();
+		//driver.findElement(usernameField).sendKeys(username);
+		//driver.findElement(passwordField).sendKeys(password);
+		//driver.findElement(submitButton).click();
 		
+		sendKeys(usernameField, username);
+		sendKeys(passwordField, password);
+		click(submitButton);
 	}
 	
-	public boolean checkMsgIsDisplayed(By locator) {
+/*	public boolean checkMsgIsDisplayed(By locator) {
 		
 		 return driver.findElement(locator).isDisplayed();
-	}
+	}*/
 	
 	public void logoutFromApp() {
-		
-		driver.findElement(logoutButton).click();
+		click(logoutButton);
+		//driver.findElement(logoutButton).click();
 	}
 	
 

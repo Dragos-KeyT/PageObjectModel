@@ -18,12 +18,14 @@ import com.google.common.io.Files;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.MenuPage;
+import pages.ShopPage;
 
 public class BaseTest {
 
 	public static WebDriver driver;
 	public MenuPage menu;
 	public BasePage app;
+	public ShopPage shop;
 	
 	@BeforeClass
 	public void setup() {
@@ -35,6 +37,7 @@ public class BaseTest {
 		
 		menu =  new MenuPage(driver);
 		app = new BasePage();
+		shop = new ShopPage(driver);
 		//driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
 	//	driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");

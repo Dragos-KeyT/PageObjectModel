@@ -27,7 +27,7 @@ public class BaseTest {
 	public BasePage app;
 	public ShopPage shop;
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	public void setup() {
 		driver = WebDriverManager.chromedriver().create();
 		driver.manage().window().maximize();
@@ -45,7 +45,7 @@ public class BaseTest {
 
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun=true)
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(6000);

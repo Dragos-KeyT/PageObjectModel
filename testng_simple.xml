@@ -2,8 +2,7 @@
 <suite name="Suite1" >
     <test name="123" >
         <classes>
-            <class name="tests.LoginTest" ></class>
-            <class name="tests.DropdownTest" ></class>
+            <class name="tests.CookiesLogin" ></class>
         </classes>
     </test>    
 </suite>

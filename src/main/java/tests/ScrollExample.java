@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
+import utils.Log;
 
 
 
@@ -46,7 +47,7 @@ public class ScrollExample extends BaseTest{
 	public void scrollTopAndDown() throws InterruptedException {
 		
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-
+		Log.info("Test log!!!");
 		//scroll down
 		jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(3000);

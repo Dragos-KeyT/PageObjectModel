@@ -31,10 +31,13 @@ public class BaseTest {
 	
 	@BeforeClass(alwaysRun=true)
 	public void setup() {
+		Log.info("Start ChromeBrowser");
 		driver = WebDriverManager.chromedriver().create();
+		Log.info("maximize chrome browser");
 		driver.manage().window().maximize();
+		Log.info("set implict wait of 10 seconds (global)");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		Log.info("Navigate to URL : https://keybooks.ro ");
 		driver.get("https://keybooks.ro");
 		
 		menu =  new MenuPage(driver);

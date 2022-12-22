@@ -2,13 +2,16 @@ package tests;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.MenuPage;
 import utils.BaseTest;
+import utils.TestNgListener;
 
+@Listeners(TestNgListener.class)
 public class LoginTest extends BaseTest{
 	
 	@Parameters({"user", "pass"})
@@ -18,7 +21,7 @@ public class LoginTest extends BaseTest{
 		MenuPage menu =  new MenuPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
 
-		menu.navigateTo(menu.loginLink);
+		menu.click(menu.loginLink);
 		loginPage.loginInApp(username, password);
 		
 		assertTrue(loginPage.checkElementIsDisplayed(loginPage.loginSucessMsg));
@@ -32,10 +35,10 @@ public class LoginTest extends BaseTest{
 		MenuPage menu =  new MenuPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
 		
-		menu.navigateTo(menu.loginLink);
+		menu.click(menu.loginLink);
 		loginPage.loginInApp(wrongUser, wrongPass);
 		
-		assertTrue(loginPage.checkElementIsDisplayed(loginPage.loginErrorMsg));
+		assertTrue(loginPage.checkElementIsDisplayed(loginPage.loginSucessMsg));
 
 	}
 	

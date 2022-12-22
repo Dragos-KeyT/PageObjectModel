@@ -7,7 +7,7 @@
     	<parameter name="invalidPass" value="invalidPass" />
         
         <classes>
-            <class name="tests.CookiesLogin" ></class>
+            <class name="tests.LoginTest" ></class>
         </classes>
         
     </test>    

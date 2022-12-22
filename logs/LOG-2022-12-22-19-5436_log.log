@@ -1,0 +1,51 @@
+19:54:36.103 [main] INFO  utils.Log - Start ChromeBrowser
+19:54:41.627 [main] INFO  utils.Log - maximize chrome browser
+19:54:42.101 [main] INFO  utils.Log - set implict wait of 10 seconds (global)
+19:54:42.114 [main] INFO  utils.Log - Navigate to URL : https://keybooks.ro 
+19:54:45.543 [main] INFO  utils.Log - ++++++++++++++++++++++++++++++++++++++++
+19:54:45.543 [main] INFO  utils.Log - Started test case :validLoginTest
+19:54:45.544 [main] INFO  utils.Log - Start time :2022.12.22.19.54.45
+19:54:45.545 [main] INFO  utils.Log - ++++++++++++++++++++++++++++++++++++++++
+19:54:45.557 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.linkText: Login
+19:54:45.758 [main] INFO  utils.Log - called method <Click()> on element :null
+19:54:46.000 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: log
+19:54:46.088 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:54:46.137 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:54:46.764 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: password
+19:54:46.826 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:54:46.871 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:54:46.927 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.xpath: //input[@class='submit_button']
+19:54:47.016 [main] INFO  utils.Log - called method <Click()> on element :null
+19:54:47.653 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.cssSelector: li[class='menu_user_logout']
+19:54:51.397 [main] INFO  utils.Log - called method <Click()> on element :null
+19:54:52.081 [main] INFO  utils.Log - ++++++++++++++++++++++++++++++++++++++++
+19:54:52.082 [main] INFO  utils.Log - Passed test case :validLoginTest
+19:54:52.082 [main] INFO  utils.Log - End time :2022.12.22.19.54.52
+19:54:52.082 [main] INFO  utils.Log - ++++++++++++++++++++++++++++++++++++++++
+19:54:52.092 [main] INFO  utils.Log - ++++++++++++++++++++++++++++++++++++++++
+19:54:52.092 [main] INFO  utils.Log - Started test case :invalidLoginTest
+19:54:52.092 [main] INFO  utils.Log - Start time :2022.12.22.19.54.52
+19:54:52.093 [main] INFO  utils.Log - ++++++++++++++++++++++++++++++++++++++++
+19:54:52.097 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.linkText: Login
+19:54:52.170 [main] INFO  utils.Log - called method <Click()> on element :null
+19:54:52.209 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: log
+19:54:52.820 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:54:52.867 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:54:52.927 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: password
+19:54:53.029 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:54:53.065 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:54:53.108 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.xpath: //input[@class='submit_button']
+19:54:53.165 [main] INFO  utils.Log - called method <Click()> on element :null
+19:55:03.303 [main] ERROR utils.Log - +++++++++++++++++++++++++++++++++++++++++
+19:55:03.303 [main] ERROR utils.Log - Failed test case :invalidLoginTest
+19:55:03.304 [main] ERROR utils.Log - Failed time :2022.12.22.19.55.03
+19:55:03.307 [main] ERROR utils.Log - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='sc_infobox_style_success']"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4551c78e8929382cd7d16db70b29caec, findElement {using=css selector, value=div[class*='sc_infobox_style_success']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/r5/ws06c4s55zn...}, goog:chromeOptions: {debuggerAddress: localhost:63899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63899/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4551c78e8929382cd7d16db70b29caec
+19:55:03.308 [main] ERROR utils.Log - +++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,26 @@
+19:27:24.450 [main] INFO  utils.Log - Start ChromeBrowser
+19:27:29.912 [main] INFO  utils.Log - maximize chrome browser
+19:27:30.386 [main] INFO  utils.Log - set implict wait of 10 seconds (global)
+19:27:30.398 [main] INFO  utils.Log - Navigate to URL : https://keybooks.ro 
+19:27:32.958 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.linkText: Login
+19:27:33.223 [main] INFO  utils.Log - called method <Click()> on element :null
+19:27:33.412 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: log
+19:27:33.498 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:27:33.545 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:27:34.209 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: password
+19:27:34.273 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:27:34.316 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:27:34.370 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.xpath: //input[@class='submit_button']
+19:27:34.457 [main] INFO  utils.Log - called method <Click()> on element :null
+19:27:35.087 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.cssSelector: li[class='menu_user_logout']
+19:27:38.859 [main] INFO  utils.Log - called method <Click()> on element :null
+19:27:39.684 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.linkText: Login
+19:27:39.760 [main] INFO  utils.Log - called method <Click()> on element :null
+19:27:39.794 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: log
+19:27:40.407 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:27:40.445 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:27:40.495 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on element with locator :By.id: password
+19:27:40.589 [main] INFO  utils.Log - called clear on method <sendkeys> on element null
+19:27:40.624 [main] INFO  utils.Log - called sendkeys on method <sendkeys> on element null
+19:27:40.668 [main] INFO  utils.Log - Called method <waitForElementToBeClickable> on element with locator :By.xpath: //input[@class='submit_button']
+19:27:40.728 [main] INFO  utils.Log - called method <Click()> on element :null
